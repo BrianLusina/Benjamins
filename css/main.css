@@ -82,8 +82,8 @@ SECTIONS
 #Q-wrapper{
 	border-bottom: 1px solid #FFFFFF;
 	margin: 0 auto;	
-
 }
+
 #prev-btn, #next-btn{
 	color:white;
 	display: inline-block;
@@ -104,6 +104,31 @@ SECTIONS
 	word-wrap: break-word;
 	text-transform: uppercase;
 }
+
+
+.share-container{
+	display:inline-block;
+	color:white;
+	width:30%;
+	margin:10px;
+}
+
+#share-facebook, #share-twitter, #share-tumblr{
+	display:inline-block;
+	width:10%;
+	padding:20px;
+}
+
+/*container for the share icons*/
+.share-icon{
+	
+}
+
+.share-text{
+	display:inline-block;
+	width:80%;	
+}
+
 /**--------------------------------------
 FOOTER
 ------------------------------------*/
