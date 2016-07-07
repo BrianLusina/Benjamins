@@ -109,26 +109,36 @@ SECTIONS
 .share-container{
 	display:inline-block;
 	color:white;
-	width:30%;
+	width:20%;
 	margin:10px;
 }
 
 #share-facebook, #share-twitter, #share-tumblr{
 	display:inline-block;
-	width:10%;
-	padding:20px;
 }
 
 /*container for the share icons*/
 .share-icon{
-	
+	display: inline-block;
+	width:20%;
+	vertical-align: top;
+	padding:5px;	
+	margin:10px;
 }
 
 .share-text{
 	display:inline-block;
-	width:80%;	
+	width:43%;
+	padding:1px;
+	margin:10px;
+}
+.share-text p{
+	line-height: 0.6 !important;
 }
 
+.share-text p:last-child{
+	color:#D1C14F;
+}
 /**--------------------------------------
 FOOTER
 ------------------------------------*/
