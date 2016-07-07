@@ -144,7 +144,7 @@ FOOTER
 ------------------------------------*/
 .img-foot-container{
 	display: inline-block;
-}
+	}
 
 .logo-icon-foot{
 	    display: inline-block;
@@ -172,3 +172,23 @@ FOOTER
 	color:#D1C14F;
 }
 
+.bottom-nav{
+	margin:5px;
+	padding:10px;
+}
+.bottom-nav a{
+	padding:10px;
+	color:white;
+}
+
+.bottom-nav a:hover{
+	color:#D1C14F;
+}
+
+.divider{
+	width:90%;
+}
+.bottom-footer-text{
+	color:white;
+	font-size:15px;
+}
