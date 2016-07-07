@@ -129,7 +129,6 @@ SECTIONS
 .share-text{
 	display:inline-block;
 	width:43%;
-	padding:1px;
 	margin:10px;
 }
 .share-text p{
@@ -139,7 +138,37 @@ SECTIONS
 .share-text p:last-child{
 	color:#D1C14F;
 }
+
 /**--------------------------------------
 FOOTER
 ------------------------------------*/
+.img-foot-container{
+	display: inline-block;
+}
+
+.logo-icon-foot{
+	    display: inline-block;
+    width: 32%;
+    vertical-align: top;
+}
+
+.logo-icon-foot img{
+	height: 3.5em;
+	width: 3.5em;
+}
+
+.text-footer{
+	display:inline-block;
+	width:39%;
+}
+
+.text-footer a{
+	font-size:10px;
+	line-height: 0.6 !important;
+	color:white;
+}
+
+.text-footer a:hover{
+	color:#D1C14F;
+}
 
