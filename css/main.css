@@ -54,17 +54,56 @@ header{
 /**--------------------------------------
 SECTIONS
 ------------------------------------*/
-#main-home{
+#hero-section{
 	background-color:#323232;
 }
 
-#tagline{
-	color:white;
+#headliner{
+	color:#E9DCA1;
+	font-weight: 800;
+	text-align: center;
 	text-transform: uppercase;
 	font-family: Cormorant, cursive;
 }
 
+#tagline{
+	border-bottom: 1px solid #FFFFFF;
+	border-top: 1px solid #FFFFFF;
+}
 
+#tagline p{
+	font-family: Alegreya Sans, cursive;
+	color:white;
+	text-align: center;
+	line-height: 50px;
+}
+
+/*quptes*/
+#Q-wrapper{
+	border-bottom: 1px solid #FFFFFF;
+	margin: 0 auto;	
+
+}
+#prev-btn, #next-btn{
+	color:white;
+	display: inline-block;
+	width: 5%;
+}
+
+#quote-container{
+	display: inline-block;
+	width: 88.5%;
+	padding:10px;
+}
+
+.quotes{
+	color:white;
+	font-family: Poiret One, cursive, sans-serif;
+	font-weight: 900;
+	font-size:50px;
+	word-wrap: break-word;
+	text-transform: uppercase;
+}
 /**--------------------------------------
 FOOTER
 ------------------------------------*/
