@@ -15,9 +15,9 @@
 		items = [].slice.call(gridEl.querySelectorAll('.product')),
 		basket;
 
-	// the compare basket
+	// the compare compare
 	function CompareBasket() {
-		this.el = document.querySelector('.compare-basket');
+		this.el = document.querySelector('.compare-compare');
 		this.compareCtrl = this.el.querySelector('.action--compare');
 		this.compareWrapper = document.querySelector('.compare'),
 		this.closeCompareCtrl = this.compareWrapper.querySelector('.action--close')
@@ -26,13 +26,13 @@
 		this.totalItems = 0;
 		this.items = [];
 
-		// compares items in the compare basket: opens the compare products wrapper
+		// compares items in the compare compare: opens the compare products wrapper
 		this.compareCtrl.addEventListener('click', this._compareItems.bind(this));
 		// close the compare products wrapper
 		var self = this;
 		this.closeCompareCtrl.addEventListener('click', function() {
-			// toggle compare basket
-			classie.add(self.el, 'compare-basket--active');
+			// toggle compare compare
+			classie.add(self.el, 'compare-compare--active');
 			// animate..
 			classie.remove(viewEl, 'view--compare');
 		});
@@ -48,17 +48,17 @@
 
 		// create item preview element
 		var preview = this._createItemPreview(item);
-		// prepend it to the basket
+		// prepend it to the compare
 		this.el.insertBefore(preview, this.el.childNodes[0]);
 		// insert item
 		this.items.push(preview);
 
 		this.totalItems++;
 		if( this.isFull() ) {
-			classie.add(this.el, 'compare-basket--full');
+			classie.add(this.el, 'compare-compare--full');
 		}
 
-		classie.add(this.el, 'compare-basket--active');
+		classie.add(this.el, 'compare-compare--active');
 	};
 
 	CompareBasket.prototype._createItemPreview = function(item) {
@@ -87,7 +87,7 @@
 	};
 
 	CompareBasket.prototype.remove = function(item) {
-		classie.remove(this.el, 'compare-basket--full');
+		classie.remove(this.el, 'compare-compare--full');
 		classie.remove(item, 'product--selected');
 		var preview = this.el.querySelector('[data-idx = "' + items.indexOf(item) + '"]');
 		this.el.removeChild(preview);
@@ -97,7 +97,7 @@
 		this.items.splice(indexRemove, 1);
 
 		if( this.totalItems === 0 ) {
-			classie.remove(this.el, 'compare-basket--active');
+			classie.remove(this.el, 'compare-compare--active');
 		}
 
 		// checkbox
@@ -129,8 +129,8 @@
 		}
 
 		setTimeout(function() {
-			// toggle compare basket
-			classie.remove(self.el, 'compare-basket--active');
+			// toggle compare compare
+			classie.remove(self.el, 'compare-compare--active');
 			// animate..
 			classie.add(viewEl, 'view--compare');
 		}, 25);
@@ -141,7 +141,7 @@
 	};
 
 	function init() {
-		// initialize an empty basket
+		// initialize an empty compare
 		basket = new CompareBasket();
 		initEvents();
 	}
@@ -151,7 +151,7 @@
 			var checkbox = item.querySelector('.action--compare-add > input[type = "checkbox"]');
 			checkbox.checked = false;
 
-			// ctrl to add to the "compare basket"
+			// ctrl to add to the "compare compare"
 			checkbox.addEventListener('click', function(ev) {
 				if( ev.target.checked ) {
 					if( basket.isFull() ) {
