@@ -1,0 +1,17 @@
+// helper variables, mixins
+@import "helpers/module";
+
+// vendor styles
+@import "vendor/module";
+
+// base modules
+@import "base/module";
+
+// layouts
+@import "layouts/module";
+
+// page styles
+@import "pages/module";
+
+// components
+@import "components/module";
