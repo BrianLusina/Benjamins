@@ -1,12 +1,24 @@
-# Benjamins
+## BENJAMINS
 
-This is a mockup site for the [Don Q Rum](http://donq.com/) website with a bit of a difference from the original.
+Simple product comparison site for alcoholic drinks
 
-Technologies used:
+#### Setup
 
-+ HTML
-+ JavaScript
-+ CSS
-+ Foundatin Frameworl
-+ jQuery Library
+```bash
+$ git clone https://github.com/BrianLusina/Benjamins.git
+$ cd Benjamins
+$ npm install
+# or if using yarn 
+$ yarn install
+```
+> This installs dependencies needed to run the application
 
+#### Running the application
+ Running the app is as simple as 
+ 
+```bash
+$ yarn start
+# or if using npm
+$ npm run start
+```
+> Starts the application on a local server on your development machine and opens default browser
