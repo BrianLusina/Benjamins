@@ -1,20 +1,22 @@
-import React, { Component } from 'react';
-import logo from '../images/logo.svg';
+import React, {Component} from 'react';
+import ProductGrid from "./components/product/ProductGrid";
+import Header from "./components/common/Header";
+import CompareBasket from "./components/compare/CompareBasket"
+import ProductCompareWrapper from "./components/compare/ProductCompareWrapper"
 
 class App extends Component {
-  render() {
-    return (
-      <div className="App">
-        <div className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h2>Welcome to React</h2>
-        </div>
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
-      </div>
-    );
-  }
+    render() {
+        return (
+            <div>
+                <CompareBasket/>
+                <div className="view">
+                    <Header/>
+                    <ProductGrid/>
+                </div>
+                <ProductCompareWrapper/>
+            </div>
+        );
+    }
 }
 
 export default App;

@@ -2,10 +2,10 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 /**
- * Product stateless component
- * View for a single Product item
+ * ProductItem stateless component
+ * View for a single ProductItem item
  */
-const Product = ({
+const ProductItem = ({
                      productImage, productTitle, productYear, productRegion,
                      productVarietal, productAlcoholContent, productPrice
                  }) => {
@@ -36,7 +36,7 @@ const Product = ({
 /**
  * Prop validation
  */
-Product.propTypes = {
+ProductItem.propTypes = {
     productImage: PropTypes.string.isRequired,
     productTitle: PropTypes.string.isRequired,
     productYear: PropTypes.string.isRequired,
@@ -46,4 +46,4 @@ Product.propTypes = {
     productPrice: PropTypes.number.isRequired
 };
 
-export default Product;
+export default ProductItem;
