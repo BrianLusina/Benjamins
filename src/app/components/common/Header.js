@@ -6,12 +6,12 @@ import React from 'react';
 const Header = () => {
     return (
         <header className="bp-header cf">
-            <span>Blueprint
+            <span>Benjamins
                 <span className="bp-icon bp-icon-about"
-                      data-content="The Blueprints are a collection of basic and minimal website concepts, components, plugins and layouts with minimal style for easy adaption and usage, or simply for inspiration.">
+                      data-content="Benjamins is a collection of legacy, legends and taste.">
                 </span>
             </span>
-            <h1>Product Comparison Layout &amp; Effect</h1>
+            <h1>Pace yourself, the night is young</h1>
             <nav>
                 <a href="http://tympanus.net/Blueprints/GridGallery/" className="bp-icon bp-icon-prev"
                    data-info="previous Blueprint"><span>Previous Blueprint</span></a>

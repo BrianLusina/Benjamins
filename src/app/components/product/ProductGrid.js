@@ -26,7 +26,7 @@ export default class ProductGrid extends Component {
         );
     }
 }
-//
+
 // ProductGrid.propTypes = {
 //     myProps: PropTypes.string.isRequired
 // };
