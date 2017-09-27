@@ -1,6 +1,6 @@
 import React from 'react';
 import expect from 'expect';
-import TestUtils from 'react-addons-test-utils';
+import TestUtils from "react-dom/test-utils"
 import ProductItem from '../app/components/product/ProductItem';
 import productImage from "./images/svg/logo.svg";
 
