@@ -1,5 +1,7 @@
 ## BENJAMINS
 
+[![Build Status](https://travis-ci.org/BrianLusina/Benjamins.svg?branch=master)](https://travis-ci.org/BrianLusina/Benjamins)
+
 Simple product comparison site for alcoholic drinks
 
 #### Setup
