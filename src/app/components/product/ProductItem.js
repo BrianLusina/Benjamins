@@ -39,8 +39,8 @@ const ProductItem = ({
 ProductItem.propTypes = {
     productImage: PropTypes.string.isRequired,
     productTitle: PropTypes.string.isRequired,
-    productYear: PropTypes.string.isRequired,
-    productRegion: PropTypes.string.isRequired,
+    productYear: PropTypes.number.isRequired,
+    productRegion: PropTypes.string,
     productVarietal: PropTypes.string.isRequired,
     productAlcoholContent: PropTypes.number.isRequired,
     productPrice: PropTypes.number.isRequired

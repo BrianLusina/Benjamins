@@ -7,7 +7,6 @@ import React, {Component} from 'react';
 import ProductItem from "./ProductItem";
 import MockProductApi from "./mockProductApi";
 
-
 export default class ProductGrid extends Component {
     constructor(props, context) {
         super(props, context);
@@ -19,16 +18,19 @@ export default class ProductGrid extends Component {
         return (
             <section className="grid">
                 {
-                    MockProductApi.getAllProducts().then(product => {
-                        return (
-                            <ProductItem productImage={product.img} productTitle={product.name}
-                                         productYear={1000 + Math.floor(Math.random() * 1000)}
-                                         productRegion={product.region}
-                                         productVarietal={product.varietal}
-                                         productAlcoholContent={product.alcohol}
-                                         productPrice={product.price}/>
-                        )
-                    })
+                    MockProductApi.getProducts().map((product, index) => {
+                            return (
+                                <ProductItem
+                                    key={index}
+                                    productImage={product.img} productTitle={product.name}
+                                    productYear={1000 + Math.floor(Math.random() * 1000)}
+                                    productRegion={product.region}
+                                    productVarietal={product.varietal}
+                                    productAlcoholContent={product.alcohol}
+                                    productPrice={product.price}/>
+                            )
+                        }
+                    )
                 }
             </section>
         );

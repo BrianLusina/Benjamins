@@ -110,6 +110,12 @@ class MockProductApi {
         });
     }
 
+    /**
+     * Simply gets all the products as an object
+     * */
+    static getProducts(){
+        return randomProducts;
+    }
 }
 
 

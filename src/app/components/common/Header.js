@@ -12,6 +12,7 @@ const Header = () => {
                 </span>
             </span>
             <h1>Pace yourself, the night is young</h1>
+{/*
             <nav>
                 <a href="http://tympanus.net/Blueprints/GridGallery/" className="bp-icon bp-icon-prev"
                    data-info="previous Blueprint"><span>Previous Blueprint</span></a>
@@ -20,6 +21,7 @@ const Header = () => {
                 <a href="http://tympanus.net/codrops/category/blueprints/" className="bp-icon bp-icon-archive"
                    data-info="Blueprints archive"><span>Go to the archive</span></a>
             </nav>
+*/}
         </header>
     );
 };
