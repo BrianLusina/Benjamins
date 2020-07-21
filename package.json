@@ -16,7 +16,7 @@
     "eject": "react-scripts eject"
   },
   "devDependencies": {
-    "codecov": "^3.6.5",
+    "codecov": "^3.7.1",
     "expect": "^26.0.0",
     "react-addons-test-utils": "^15.6.2"
   }
